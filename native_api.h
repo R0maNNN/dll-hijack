@@ -12,6 +12,16 @@ extern "C" {
 #endif
 
 NTSYSAPI
+int
+WINAPI
+MessageBoxW(
+    _In_opt_ HWND hWnd,
+    _In_opt_ LPCWSTR lpText,
+    _In_opt_ LPCWSTR lpCaption,
+    _In_ UINT uType
+);
+
+NTSYSAPI
 ULONG
 DbgPrintEx(
     ULONG ComponentId,
